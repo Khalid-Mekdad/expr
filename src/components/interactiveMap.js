@@ -16,10 +16,19 @@ class InterActiveMap extends React.Component {
         map.projection = new am4maps.projections.Miller();
         let polygonSeries = new am4maps.MapPolygonSeries();
         polygonSeries.useGeodata = true;
+        polygonSeries.data = [{
+            "id":"EG",
+            "fill": am4core.color("#F05C5C")
+        }]
         map.series.push(polygonSeries);
-
+        console.log(polygonSeries.dataItems)
+        // for (let index = 0; index < polygonSeries.data.length-1; index++) {
+        //     console.log(polygonSeries.data[index])
+        // }
+        
         var polygonTemplate = polygonSeries.mapPolygons.template;
         polygonTemplate.tooltipText = "{name}";
+        polygonTemplate.propertyFields.fill = "fill";
         //polygonTemplate.fill = am4core.color("#74B266");
 
         // Create hover state and set alternative fill color
