@@ -81,7 +81,7 @@ const countryMap =
     { countryName: 'Gabon', code: 'GA',visited:false},
     { countryName: 'Gambia', code: 'GM',visited:false},
     { countryName: 'Georgia', code: 'GE',visited:false},
-    { countryName: 'Germany', code: 'DE',visited:true,fillColor:"#000000"},
+    { countryName: 'Germany', code: 'DE',visited:true,fillColor:"#000001"},
     { countryName: 'Ghana', code: 'GH',visited:false},
     { countryName: 'Gibraltar', code: 'GI',visited:false},
     { countryName: 'Greece', code: 'GR',visited:false},
